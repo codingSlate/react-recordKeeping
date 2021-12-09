@@ -1,7 +1,5 @@
-import React from 'react'
-const Section = () =>{
-    return(
-    <section></section>
-    )
-}
-export default Section
+import React from 'react';
+const Section = ({ children }) => {
+  return <section>{children}</section>;
+};
+export default Section;
