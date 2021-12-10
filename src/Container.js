@@ -8,7 +8,8 @@ const Container = () => {
     <div>
       <Header />
       <main>
-        <Section></Section>
+        <Section headingText="Add Record Details"></Section>
+        <Section headingText="All Records"></Section>
       </main>
       <Footer />
     </div>
