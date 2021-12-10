@@ -1,6 +1,9 @@
 * {
   font-family: Lato;
 }
+body {
+  background-color: rgb(210, 238, 255);
+}
 
 main {
   display: flex;
@@ -10,6 +13,26 @@ main {
     border: 1px dotted gray;
     h2 {
       font-size: 1em;
+    }
+    ul {
+      margin: 0;
+      padding: 0 15px;
+      list-style: decimal;
+      li {
+        margin: 5px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: rgb(218, 255, 221);
+        h4 {
+          margin: 0;
+        }
+        div {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    &:nth-child(2) {
+      flex: 1.5;
     }
   }
 }
