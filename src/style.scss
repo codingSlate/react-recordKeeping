@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   font-family: Lato;
 }
 body {
@@ -33,6 +34,12 @@ main {
     }
     &:nth-child(2) {
       flex: 1.5;
+    }
+    form {
+      input,
+      textarea, button {
+        width: 100%;
+      }
     }
   }
 }

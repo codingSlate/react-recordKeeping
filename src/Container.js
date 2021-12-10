@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Section from './Section';
 import List from './List';
+import Form from './Form';
 import Footer from './Footer';
 
 const Container = () => {
@@ -9,7 +10,9 @@ const Container = () => {
     <div>
       <Header />
       <main>
-        <Section headingText="Add Record Details"></Section>
+        <Section headingText="Add Record Details">
+          <Form />
+        </Section>
         <Section headingText="All Records">
           <List />
         </Section>
