@@ -1,17 +1,5 @@
 import React from 'react';
-const List = () => {
-  const records = [
-    {
-      recordName: 'Math Book',
-      writerName: 'Rohin',
-      description: 'Best Math books for kids',
-    },
-    {
-      recordName: 'Biology Book',
-      writerName: 'Moria',
-      description: 'Introductory to Biology',
-    },
-  ];
+const List = ({ records }) => {
   return (
     <ul>
       {records.map(({ recordName, writerName, description }) => (

@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import Section from './Section';
 import List from './List';
 import Form from './Form';
 import Footer from './Footer';
 
+const recordsData = [
+  {
+    recordName: 'Math Book',
+    writerName: 'Rohin',
+    description: 'Best Math books for kids',
+  },
+  {
+    recordName: 'Biology Book',
+    writerName: 'Moria',
+    description: 'Introductory to Biology',
+  },
+];
+
 const Container = () => {
+  const [records, setRecord] = useState(recordsData);
   return (
     <div>
       <Header />
@@ -14,7 +28,7 @@ const Container = () => {
           <Form />
         </Section>
         <Section headingText="All Records">
-          <List />
+          <List records={records} />
         </Section>
       </main>
       <Footer />
