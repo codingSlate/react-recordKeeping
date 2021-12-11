@@ -15,28 +15,22 @@ const Form = ({ onAdd }) => {
   };
   return (
     <form onSubmit={onSubmitHandler}>
-      <label htmlFor="recordName">Record Name</label>
-      {/* <input
-        type="text"
-        id="recordName"
-        name="recordName"
-        onChange={onChangeHandler}
-        value={form.recordName}
-      /> */}
       <Input
+        labelText="Record Name"
         type="text"
         name="recordName"
         onChange={onChangeHandler}
         value={form.recordName}
       />
-      <label htmlFor="writerName">Writer Name</label>
-      <input
+      <Input
+        labelText="Writer Name"
         type="text"
         id="writerName"
         name="writerName"
         onChange={onChangeHandler}
         value={form.writerName}
       />
+
       <label htmlFor="description">Description</label>
       <textarea
         row="10"
