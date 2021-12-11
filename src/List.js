@@ -3,7 +3,7 @@ const List = ({ records }) => {
   return (
     <ul>
       {records.map(({ id, recordName, writerName, description }) => (
-        <li key={id.toString()}>
+        <li key={id}>
           <h4>{recordName}</h4>
           <div>{writerName}</div>
           <div>{description}</div>
