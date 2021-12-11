@@ -7,11 +7,13 @@ import Footer from './Footer';
 
 const recordsData = [
   {
+    id:1,
     recordName: 'Math Book',
     writerName: 'Rohin',
     description: 'Best Math books for kids',
   },
   {
+    id:2,
     recordName: 'Biology Book',
     writerName: 'Moria',
     description: 'Introductory to Biology',

@@ -2,8 +2,8 @@ import React from 'react';
 const List = ({ records }) => {
   return (
     <ul>
-      {records.map(({ recordName, writerName, description }) => (
-        <li>
+      {records.map(({ id, recordName, writerName, description }) => (
+        <li key={id.toString()}>
           <h4>{recordName}</h4>
           <div>{writerName}</div>
           <div>{description}</div>
