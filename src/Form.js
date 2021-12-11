@@ -30,15 +30,16 @@ const Form = ({ onAdd }) => {
         onChange={onChangeHandler}
         value={form.writerName}
       />
-
-      <label htmlFor="description">Description</label>
-      <textarea
+      <Input
+        labelText="Description"
         row="10"
+        type="textarea"
         id="description"
         name="description"
         onChange={onChangeHandler}
         value={form.description}
-      ></textarea>
+      />
+
       <button type="submit">Add</button>
     </form>
   );
