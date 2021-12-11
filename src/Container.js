@@ -25,7 +25,7 @@ const Container = () => {
 
   const onAddHandler = (data) => {
     setRecord([...records, data]);
-    console.log([...records, data]);
+    // console.log([...records, data]);
   };
   return (
     <div>
