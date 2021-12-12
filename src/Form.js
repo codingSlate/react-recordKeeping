@@ -10,6 +10,13 @@ const Form = ({ onAdd }) => {
   };
   const onSubmitHandler = (e) => {
     e.preventDefault();
+    if (
+      form.recordName === '' ||
+      form.writerName === '' ||
+      form.description === ''
+    ) {
+      return;
+    }
     onAdd({ id: uniqid(), ...form });
     setForm(formInit);
   };
